@@ -1,0 +1,71 @@
+name: s11_app_flutter_fventas
+description: "App Fuerza de Ventas - Banco Santander Consumer Perú. Oficiales de credito en campo."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # --- Estado (MVVM: ViewModel = StateNotifier) ---
+  flutter_riverpod: ^2.5.1
+
+  # --- Backend remoto: API REST del backend FastAPI mobile (puerto 8003) ---
+  http: ^1.2.0
+
+  # --- Persistencia local / offline-first ---
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  flutter_secure_storage: ^9.2.2
+
+  # --- Navegacion ---
+  go_router: ^13.2.0  # âœ… CORREGIDO
+
+  # --- Red y formato ---
+  connectivity_plus: ^6.0.5
+  intl: ^0.20.2
+
+  # --- Acciones del dispositivo ---
+  url_launcher: ^6.3.0
+
+  # --- Graficos (M11 reportes) ---
+  fl_chart: ^0.69.0
+
+  # --- Captura de fotos de documentos (M6) ---
+  image_picker: ^1.1.2
+  image: ^4.2.0
+
+  # --- PDF para compartir (M9 / RF-71) ---
+  pdf: ^3.11.1
+  printing: ^5.13.2
+
+  # --- GPS y notificaciones locales ---
+  geolocator: ^13.0.1  # âœ… CORREGIDO
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+
+  # --- Mapa de ruta (M2 / RF-19) ---
+  google_maps_flutter: ^2.9.0
+
+  # --- Mapa OSM para Web (flutter_map + latlong2) ---
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # --- Geocodificacion inversa (HU-10 / RF-26) ---
+  geocoding: ^3.0.0
+
+  # --- Sincronizacion nocturna (HU-05 / RF-13) ---
+  workmanager: ^0.9.0+3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
